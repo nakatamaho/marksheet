@@ -22,12 +22,18 @@ http://qiita.com/sbtseiji/items/6438ec2bf970d63817b8
 How to test
 
 * Macportsから
-** $ sudo port install opencv +python35
+<pre>
+$ sudo port install opencv +python35
+</pre>
 でインストールできる。
 まずはサンプルで
-** $ python marksheet.py 20170912130856.jpg
+<pre>
+$ python marksheet.py 20170912130856.jpg
+</pre>
 とすると
-** ln -s 20170912130856.jpg 1_33_010987_X.jpg
+<pre>
+ln -s 20170912130856.jpg 1_33_010987_X.jpg
+</pre>
 と、学籍番号をファイル名として出力する。
 
 次に
@@ -41,11 +47,15 @@ Tips
 * 読めなかった場合は"z"、複数マークしていた場合は"y"と出力する。
 * マークシートのサイズを変えるとmarksheet.pyの値を変更しなければならない。
 読み取りの参考になるのは、res.pngである。これは
+<pre>
 python marksheet.py xxxx.jpg
+</pre>
 とすると生成される。
 まずは20170912130856.jpgを読み取った場合のres.pngを見て欲しい。
 これがずれている場合は正常に読めない。
 marksheet.pyの
+<pre>
     43      img = img[398:_nrow*100-88,42:ncol*100-1-34]
+</pre>
 を適宜変更して欲しい。
 
