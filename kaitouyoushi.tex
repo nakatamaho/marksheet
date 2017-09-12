@@ -1,0 +1,156 @@
+\documentclass[a4j]{jarticle}
+\usepackage{color}
+\usepackage{mflogo}
+\font\marksheet=msheet
+\font\mrksht=msheet2
+
+\definecolor{gray9}{gray} {0.8} 
+
+\newsavebox{\ichikarazero}
+\savebox{\ichikarazero}{
+{\marksheet 1}\hskip2pt{\marksheet 2}\hskip2pt%
+{\marksheet 3}\hskip2pt{\marksheet 4}\hskip2pt%
+{\marksheet 5}\hskip2pt{\marksheet 6}\hskip2pt%
+{\marksheet 7}\hskip2pt{\marksheet 8}\hskip2pt%
+{\marksheet 9}\hskip2pt{\marksheet 0}}
+
+\newsavebox{\minuskarakyu}
+\savebox{\minuskarakyu}{
+{\marksheet -}\hskip5pt{\marksheet ?}\hskip5pt%
+{\marksheet 0}\hskip5pt%
+{\marksheet 1}\hskip5pt{\marksheet 2}\hskip5pt%
+{\marksheet 3}\hskip5pt{\marksheet 4}\hskip5pt%
+{\marksheet 5}\hskip5pt{\marksheet 6}\hskip5pt%
+{\marksheet 7}\hskip5pt{\marksheet 8}\hskip5pt%
+{\marksheet 9}\hskip5pt{\marksheet |}}
+
+\newsavebox{\minuskarag}
+\savebox{\minuskarag}{
+{\marksheet -}\hskip5pt%
+{\marksheet 0}\hskip5pt%
+{\marksheet 1}\hskip5pt{\marksheet 2}\hskip5pt%
+{\marksheet 3}\hskip5pt{\marksheet 4}\hskip5pt%
+{\marksheet 5}\hskip5pt{\marksheet 6}\hskip5pt%
+{\marksheet 7}\hskip5pt{\marksheet 8}\hskip5pt%
+{\marksheet 9}\hskip5pt%
+{\marksheet A}\hskip5pt{\marksheet B}\hskip5pt%
+{\marksheet C}\hskip5pt{\marksheet D}\hskip5pt%
+{\marksheet E}\hskip5pt{\marksheet F}\hskip5pt%
+{\marksheet G}}
+
+\newsavebox{\minuskarad}
+\savebox{\minuskarad}{
+{\marksheet -}\hskip5pt{\marksheet 0}\hskip5pt%
+{\marksheet 1}\hskip5pt{\marksheet 2}\hskip5pt%
+{\marksheet 3}\hskip5pt{\marksheet 4}\hskip5pt%
+{\marksheet 5}\hskip5pt{\marksheet 6}\hskip5pt%
+{\marksheet 7}\hskip5pt{\marksheet 8}\hskip5pt%
+{\marksheet 9}\hskip5pt%
+{\marksheet a}\hskip5pt{\marksheet b}\hskip5pt%
+{\marksheet c}\hskip5pt{\marksheet d}}
+
+\newsavebox{\ichizero}
+\savebox{\ichizero}{
+{\mrksht 1}\hskip5.4pt{\mrksht 2}\hskip5.4pt%
+{\mrksht 3}\hskip5.4pt{\mrksht 4}\hskip5.4pt%
+{\mrksht 5}\hskip5.4pt{\mrksht 6}\hskip5.4pt%
+{\mrksht 7}\hskip5.4pt{\mrksht 8}\hskip5.4pt%
+{\mrksht 9}\hskip5.4pt{\mrksht 0}}
+
+
+\begin{document}
+
+\unitlength=1mm
+\medskip
+
+\begin{center}
+\begin{picture}(50,100)
+\thicklines
+
+\multiput(-20,15)(0,0){1}{\line(0,1){68}}  %太い縦線
+\multiput(0,15)(0,0){1}{\line(0,1){68}}  %太い縦線
+\multiput(20,15)(0,0){1}{\line(0,1){68}}  %太い縦線
+\multiput(110,15)(0,0){1}{\line(0,1){68}}  %太い縦線
+
+\multiput(-20,15)(0,68){2}{\line(1,0){130}} %太い横線 上下2本ok!
+
+\multiput(-20,73)(0,15){1}{\line(1,0){130}} %太い横線クラス番号、学籍番号の下
+\multiput(-20,68)(0,15){1}{\line(1,0){130}} %太い横線 十位 ... 英字の下
+
+\thinlines
+\multiput(-10,15)(10,0){13}{\line(0,1){58}} %縦棒
+
+\multiput(-15,59)(10,0){1}{\makebox(0,0){理}}
+\multiput(-15,54)(10,0){1}{\makebox(0,0){文}}
+
+
+\multiput(-5,59)(10,0){1}{\makebox(0,0){\textcolor{gray9}{\marksheet 1}}}
+\multiput(-5,54)(10,0){1}{\makebox(0,0){\textcolor{gray9}{\marksheet 2}}}
+\multiput(-5,49)(10,0){1}{\makebox(0,0){\textcolor{gray9}{\marksheet 3}}}
+
+\multiput(5,64)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 0}}}
+\multiput(5,59)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 1}}}
+\multiput(5,54)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 2}}}
+\multiput(5,49)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 3}}}
+\multiput(5,44)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 4}}}
+\multiput(5,39)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 5}}}
+\multiput(5,34)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 6}}}
+\multiput(5,29)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 7}}}
+\multiput(5,24)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 8}}}
+\multiput(5,19)(10,0){8}{\makebox(0,0){\textcolor{gray9}{\marksheet 9}}}
+
+\put(85,64){\makebox(0,0){\textcolor{gray9}{\marksheet A}}}
+\put(85,59){\makebox(0,0){\textcolor{gray9}{\marksheet B}}}
+\put(85,54){\makebox(0,0){\textcolor{gray9}{\marksheet C}}}
+\put(85,49){\makebox(0,0){\textcolor{gray9}{\marksheet D}}}
+\put(85,44){\makebox(0,0){\textcolor{gray9}{\marksheet E}}}
+\put(85,39){\makebox(0,0){\textcolor{gray9}{\marksheet F}}}
+\put(85,34){\makebox(0,0){\textcolor{gray9}{\marksheet G}}}
+\put(85,29){\makebox(0,0){\textcolor{gray9}{\marksheet H}}}
+\put(85,24){\makebox(0,0){\textcolor{gray9}{\marksheet I}}}
+\put(85,19){\makebox(0,0){\textcolor{gray9}{\marksheet J}}}
+
+\put(95,64){\makebox(0,0){\textcolor{gray9}{\marksheet K}}}
+\put(95,59){\makebox(0,0){\textcolor{gray9}{\marksheet L}}}
+\put(95,54){\makebox(0,0){\textcolor{gray9}{\marksheet M}}}
+\put(95,49){\makebox(0,0){\textcolor{gray9}{\marksheet N}}}
+\put(95,44){\makebox(0,0){\textcolor{gray9}{\marksheet O}}}
+\put(95,39){\makebox(0,0){\textcolor{gray9}{\marksheet P}}}
+\put(95,34){\makebox(0,0){\textcolor{gray9}{\marksheet Q}}}
+\put(95,29){\makebox(0,0){\textcolor{gray9}{\marksheet R}}}
+\put(95,24){\makebox(0,0){\textcolor{gray9}{\marksheet S}}}
+\put(95,19){\makebox(0,0){\textcolor{gray9}{\marksheet T}}}
+
+\put(105,64){\makebox(0,0){\textcolor{gray9}{\marksheet U}}}
+\put(105,59){\makebox(0,0){\textcolor{gray9}{\marksheet V}}}
+\put(105,54){\makebox(0,0){\textcolor{gray9}{\marksheet W}}}
+\put(105,49){\makebox(0,0){\textcolor{gray9}{\marksheet X}}}
+\put(105,44){\makebox(0,0){\textcolor{gray9}{\marksheet Y}}}
+\put(105,39){\makebox(0,0){\textcolor{gray9}{\marksheet Z}}}
+
+
+\put(-15,70.5){\makebox(0,0){\bf 科}}
+\put(-5,70.5){\makebox(0,0){\bf 類}}
+\put(5,70.5){\makebox(0,0){\bf 十位}}
+\put(15,70.5){\makebox(0,0){\bf 一位}}
+\put(25,70.5){\makebox(0,0){\bf 十万位}}
+\put(35,70.5){\makebox(0,0){\bf 万位}}
+\put(45,70.5){\makebox(0,0){\bf 千位}}
+\put(55,70.5){\makebox(0,0){\bf 百位}}
+\put(65,70.5){\makebox(0,0){\bf 十位}}
+\put(75,70.5){\makebox(0,0){\bf 一位}}
+\put(85,70.5){\makebox(0,0){\bf 英字}}
+\put(95,70.5){\makebox(0,0){\bf 英字}}
+\put(105,70.5){\makebox(0,0){\bf 英字}}
+
+\put(-10,78){\makebox(0,0){\bf 科 類}}
+\put(10,78){\makebox(0,0){\bf クラス番号}}
+\put(65,78){\makebox(0,0){\bf 学 籍 番 号}}
+
+\put(31,12){\makebox(0,0){\bf 注意:科に丸、学籍番号、クラス番号を鉛筆などで塗りつぶすこと。}}
+\put(47,8){\makebox(0,0){\bf 記載がない場合、読み取りにくい場合は出席とならない場合がある。毎回確認すること。}}
+
+\end{picture}
+\end{center}
+
+\end{document}
