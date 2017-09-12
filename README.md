@@ -1,16 +1,17 @@
 学籍番号マークシート(解答用紙)とそのリーダーのサンプル
 
 学籍番号マークシートの作成は以下を参考にTeXで行いました。
-https://unilab.gbb60166.jp/tex/msheet.htm
+* https://unilab.gbb60166.jp/tex/msheet.htm
 「METAFONT を利用したマークシート・フォントの作成」
 
 マークシートリーダー以下を参考にしました。
-http://qiita.com/sbtseiji/items/6438ec2bf970d63817b8
+* http://qiita.com/sbtseiji/items/6438ec2bf970d63817b8
 「PythonとOpenCVで簡易OMR（マークシートリーダ）を作る」
 
 学籍番号マークシート(解答用紙)は、上のTeXをからpdfを作成、
-スクリーンショットからPowerPointで貼り付けました。マークシートリーダー
-にあった、マーカーを配置し、マークシートリーダーのソースを調整しました。
+それのスクリーンショットからPowerPointに貼り付けました。
+上記「PythonとOpenCVで簡易OMR（マークシートリーダ）を作る」にあったマーカーを配置し、
+マークシートリーダーのソースを調整しました。
 
 こちらの環境は
 * macOS Sierra
