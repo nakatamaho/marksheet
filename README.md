@@ -22,12 +22,12 @@ http://qiita.com/sbtseiji/items/6438ec2bf970d63817b8
 How to test
 
 * Macportsから
-$ sudo port install opencv +python35
-でインストール
+** $ sudo port install opencv +python35
+でインストールできる。
 まずはサンプルで
-$ python marksheet.py 20170912130856.jpg
+** $ python marksheet.py 20170912130856.jpg
 とすると
-ln -s 20170912130856.jpg 1_33_010987_X.jpg
+** ln -s 20170912130856.jpg 1_33_010987_X.jpg
 と、学籍番号をファイル名として出力する。
 
 次に
